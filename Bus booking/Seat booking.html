@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Seat Booking </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap5.min.css">
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           
+           
+        }
+
+        .bus {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin: 10% 0 0 30%;
+        }
+        .seat {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .seat.available {
+            background-color: #4caf50; 
+            color: white;
+        }
+
+        .seat.booked {
+            background-color: #d9534f; 
+            color: white;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <body class="background-img">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="logo" src="Images/bb.jpg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <div class="left">
+                        <li>Welcome:-
+                            <script>
+                                document.write(localStorage.getItem("name"));
+                            </script>
+                        </li>
+                    </div>
+    
+    
+    
+    
+                </ul>
+    
+            </div>
+        </nav>
+    <div class="bus" onclick="bookSeat(event)">
+       
+        <div id="seat-1-1" class="seat available">1</div>
+        <div id="seat-1-2" class="seat available">2</div>
+        <div id="seat-1-3" class="seat available">3</div>
+        <div id="seat-1-4" class="seat available">4</div>
+        <div id="seat-1-5" class="seat available">5</div>
+        <div id="seat-1-6" class="seat available">6</div>
+
+        <div id="seat-2-1" class="seat available">7</div>
+        <div id="seat-2-2" class="seat available">8</div>
+        <div id="seat-2-3" class="seat available">9</div>
+        <div id="seat-2-4" class="seat available">10</div>
+        <div id="seat-2-5" class="seat available">11</div>
+        <div id="seat-2-6" class="seat available">12</div>
+
+        <div id="seat-3-1" class="seat available">13</div>
+        <div id="seat-3-2" class="seat available">14</div>
+        <div id="seat-3-3" class="seat available">15</div>
+        <div id="seat-3-4" class="seat available">16</div>
+        <div id="seat-3-5" class="seat available">17</div>
+        <div id="seat-3-6" class="seat available">18</div>
+
+        <div id="seat-4-1" class="seat available">19</div>
+        <div id="seat-4-2" class="seat available">20</div>
+        <div id="seat-4-3" class="seat available">21</div>
+        <div id="seat-4-4" class="seat available">22</div>
+        <div id="seat-4-5" class="seat available">23</div>
+        <div id="seat-4-6" class="seat available">24</div>
+        <button class="btn btn-success " style="width: 50%;margin-left: 40px;">Available</button>
+        <button class="btn btn-danger" style="width: 50%; margin-left: 40px;">Booked</button>
+        <a type="button" class="btn btn-warning"  style="width: 50%; margin: 10px 0 0 40px;" href="checkout.html">Checkout</a>
+
+
+    </div>
+
+    <script>
+        function bookSeat(event) {
+            if (event.target.classList.contains('seat') && event.target.classList.contains('available')) {
+                // Toggle seat availability on click
+                event.target.classList.toggle('available');
+                event.target.classList.toggle('booked');
+            }
+        }
+    </script> -->
+    <body class="background-img">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img class="logo" src="Images/bb.jpg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <div class="left">
+                        <li>Welcome:-
+                            <script>
+                                document.write(localStorage.getItem("name"));
+                            </script>
+                        </li>
+                    </div>
+    
+    
+    
+    
+                </ul>
+    
+            </div>
+        </nav>
+    
+    
+        <section>
+            <div class="background">
+                <div class="Bus">
+                    <h1>Select Seats</h1>
+                    <div class="buses">
+                    </div>
+                    <ol class="seatsBuses">
+                        <li class="row row--1">
+                            <ol class="seats" type="A">
+                                <li class="seat">
+                                    <input type="checkbox" id="1A" />
+                                    <label for="1A">S1</label>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="row row--2">
+                            <ol class="seats" type="A">
+                                <li class="seat seat2">
+                                    <input type="checkbox" id="2A" />
+                                    <label for="2A">S2</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="2B" />
+                                    <label for="2B">S3</label>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="row row--3">
+                            <ol class="seats" type="A">
+                                <li class="seat">
+                                    <input type="checkbox" id="3A" />
+                                    <label for="3A">S4</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="3B" />
+                                    <label for="3B">S5</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" class="Margin" id="3D" />
+                                    <label for="3D">S6</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="3E" />
+                                    <label for="3E">S7</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="3F" />
+                                    <label for="3F">S8</label>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="row row--4">
+                            <ol class="seats" type="A">
+                                <li class="seat">
+                                    <input type="checkbox" id="4A" />
+                                    <label for="4A">S9</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="4B" />
+                                    <label for="4B">S10</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" class="Margin" id="4D" />
+                                    <label for="4D">S11</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="4E" />
+                                    <label for="4E">S12</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="4E" />
+                                    <label for="4E">S13</label>
+                                </li>
+    
+                            </ol>
+                        </li>
+                        <li class="row row--5">
+                            <ol class="seats" type="A">
+                                <li class="seat">
+                                    <input type="checkbox" id="5A" />
+                                    <label for="5A">S14</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="5B" />
+                                    <label for="5B">S15</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" class="Margin" id="5D" />
+                                    <label for="5D">S16</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="5E" />
+                                    <label for="5E">S17</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="4E" />
+                                    <label for="4E">218</label>
+                                </li>
+    
+                            </ol>
+                        </li>
+                        <li class="row row--6">
+                            <ol class="seats" type="A">
+                                <li class="seat">
+                                    <input type="checkbox" id="6A" />
+                                    <label for="6A">S19</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="6B" />
+                                    <label for="6B">S20</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" class="Margin" id="6D" />
+                                    <label for="6D">S21</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="6E" />
+                                    <label for="6E">S22</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="6E" />
+                                    <label for="6E">S23</label>
+                                </li>
+    
+                            </ol>
+                        </li>
+                        <li class="row row--7">
+                            <ol class="seats" type="A">
+                                <li class="seat">
+                                    <input type="checkbox" id="7A" />
+                                    <label for="7A">S24</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="7B" />
+                                    <label for="7B">S25</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" class="Margin" id="7D" />
+                                    <label for="7D">S26</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="7E" />
+                                    <label for="7E">S27</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="7E" />
+                                    <label for="7E">S28</label>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="row row--8">
+                            <ol class="seats" type="A">
+                                <li class="seat">
+                                    <input type="checkbox" id="8A" />
+                                    <label for="8A">S29</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="8B" />
+                                    <label for="8B">S30</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" class="Margin" id="8D" />
+                                    <label for="8D">S31</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="7E" />
+                                    <label for="7E">S32</label>
+                                </li>
+                                <li class="seat">
+                                    <input type="checkbox" id="7E" />
+                                    <label for="7E">S33</label>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <div class="total-amount" style="text-align: center; margin-top: 20px;">
+                    <h2>Total Amount: <span class="total-amount-value">0</span> Rs</h2>
+                    <button class="payment-button" onclick="generateInvoice()">Payment</button>
+                </div>
+            </div>
+        </section>
+        <script src="Js/bus.js"></script>
+    
+</body>
+</html>

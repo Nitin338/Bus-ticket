@@ -1,0 +1,400 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/* Login Page */
+/* 
+.form {
+    width: 10%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px 25px;
+
+} */
+
+h4 {
+    padding-top: 10px;
+    color: #BE3144
+}
+
+
+
+
+
+/* Sign Up */
+
+form {
+    width: 30%;
+    height:auto;
+    background-color: rgb(239, 232, 223);
+    margin:7% 0 0 0;
+    border-radius: 12px 12px;
+    backdrop-filter:blur(10px);
+
+
+
+}
+
+h4 {
+    padding-top: 10px;
+    color: #BE3144
+}
+
+.bg-img{
+    background-image: url(../Images/signn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* backdrop-filter:blur(2px); */
+    
+   
+}
+
+
+
+.btn-primary {
+    width: 40%;
+    border: none;
+    margin: 0 0 10px 100px;
+
+}
+
+.btn-success {
+    width: 70%;
+    border: none;
+    margin: 0 0 10px 40px;
+
+}
+
+
+.form-label {
+    /* color: white; */
+    padding-left: 10px;
+    box-shadow: none;
+}
+
+
+
+
+/* Home Page Navbar */
+
+
+.logo{
+    width:10%;
+    height:70px;
+}
+
+
+.background-img{
+    background-image:url(../Images/bus2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+
+}
+
+
+.destination{
+    background-color: rgb(78, 59, 59);
+    width:80%;
+    height:230px;
+    margin-left:10%;
+    border-radius: 12px 12px;
+}
+
+.date{
+margin-left: 30%;
+width: 30%;}
+
+
+.bt{
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 30%;
+}
+
+
+.left{
+    padding-left: 550px;
+    color: #BE3144;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.bus{
+    color:#ffffff;
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.table{
+    margin-top: 3%;
+}
+
+
+
+
+
+
+/* Book seat */
+
+
+
+.seatres{
+  padding: 15px;
+  background-color: #BE3144;
+}
+
+.bus{
+	border: 1px solid #ddd;
+	width: 20%;
+	padding: 0.5rem;
+	border-radius: 4px;
+
+	&.seat2-3, &.seat2-2{
+		.seats{
+			.seat{
+				&:nth-child(2) {
+			    	margin-right: 14.28571428571429%;
+			  	}
+			}
+		}
+	}
+
+	&.seat3-2{
+		.seats{
+			.seat{
+				&:nth-child(3) {
+			    	margin-right: 14.28571428571429%;
+			  	}
+			}
+		}
+	}
+}
+
+.seats {
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	-ms-flex-pack: center !important;
+	  justify-content: center !important;
+  	padding: 0;
+  	margin-bottom: 2px;
+
+.seat{
+	  	display: flex;
+	  	flex: 0 0 14.28571428571429%;
+	  	padding: 3px;
+	  	position: relative;
+
+	  	label {
+			border-radius: 4px;
+			background:rgb(188, 57, 57);
+			padding: 0;
+			width: 25px;
+			height: 25px;
+			margin-bottom: 0.1rem;
+			display: inline-block;
+			font-size: 0.7rem;
+		}
+
+    }}
+
+/* Check Out */
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+
+  /* Bus Seats */
+
+  
+html {
+  font-size: 16px;
+}
+h1{
+  margin-left: 15%;
+}
+.background{
+  background-color:rgba(238, 235, 235, 0.586);
+  width: 45%;
+  margin-left: 30%;
+}
+
+.Bus {
+  margin-top:9%;
+  margin-left:27%;
+  max-width: 300px;
+} 
+.buses {
+  border-right: 5px solid #d8d8d8;
+  border-left: 5px solid #d8d8d8;
+}
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.seats {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.seat {
+  display: flex;
+  flex: 0 0 14.28571428571429%;
+  padding: 5px;
+  position: relative;
+}
+.seat:nth-child(3) {
+  margin-right: 14.28571428571429%;
+}
+.seat input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.seat input[type=checkbox]:checked + label {
+  background: #f60408;
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.seat input[type=checkbox]:disabled + label {
+  background: #dddddd;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.seat input[type=checkbox]:disabled + label:after {
+  content: "X";
+  text-indent: 0;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.seat input[type=checkbox]:disabled + label:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.seat label {
+  height:40px;
+  width: 50px;
+  text-align: center;
+  line-height: 30px;
+  padding: 4px 0;
+  background: green;
+  border-radius: 60px;
+}
+.seat label:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0px 2px #424244;
+}
+.payment-button {
+      background-color: #4ca2af;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .payment-button:hover {
+      background-color: #45a049;
+    }
+    li .seats .seat2{
+      margin-bottom: 50px;
+      
+    }
